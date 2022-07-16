@@ -1,0 +1,117 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: #f2ebe3
+  font-size: 14px
+  color: #6c7289
+  font-family: 'Montserrat', sans-serif
+
+main
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.card
+  margin: 25px
+  background-color: #fff
+  max-width: 650px
+  height: 500px
+  display: flex
+  border-radius: 15px
+  flex-wrap: wrap
+
+.product-img
+  width: 50%
+  background-image: url("../images/image-product-desktop.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 15px 0 0 15px
+
+.product-descr
+  width: 50%
+  height: 100%
+
+.product-cont
+  max-width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 2em
+
+  & .pre-title
+    letter-spacing: 5px
+
+  & h1
+    font-family: 'Fraunces', serif
+    font-size: 2.25em
+    color: #000
+
+.prices
+  display: flex
+  justify-content: flex-end
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: center
+
+.newprice
+  font-family: 'Fraunces', serif
+  color: hsl(158, 36%, 37%)
+  font-size: 30px
+  margin-right: 25px
+
+.addcart
+  background-color: #3c8067
+  color: #fff
+  text-decoration: none
+  width: 100%
+  padding: 10px 10px
+  border-radius: 10px
+  text-align: center
+  font-size: 1em
+
+  &:hover
+    background-color: #40a07d
+
+.attribution
+  font-size: 11px
+  text-align: center
+  & a
+    color: hsl(228, 45%, 44%)
+
+@media screen and (max-width: 450px)
+
+  .card
+    flex-direction: column
+    justify-content: stretch
+    width: 90%
+    height: 700px
+
+  .product-img
+    background-image: url("../images/image-product-mobile.jpg")
+    width: 100%
+    height: 40%
+    border-radius: 15px 15px 0 0
+
+  .product-descr
+    width: 100%
+    height: 60%
+    display: flex
+    justify-content: center
+
+  .product-cont
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-start
+    padding: 0 1em
